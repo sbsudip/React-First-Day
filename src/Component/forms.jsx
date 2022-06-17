@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-export default function Details() {
+export default function forms() {
     const [firstName, setFirstName] = useState(""),
         [lastName, setLastName] = useState(""),
         [age, setAge] = useState(1),
