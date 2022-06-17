@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-export default function OtherInfo() {
+export default function Details() {
     const [firstName, setFirstName] = useState(""),
         [lastName, setLastName] = useState(""),
         [age, setAge] = useState(1),
@@ -14,8 +14,8 @@ export default function OtherInfo() {
     }
  
     return <div className='row'>
-        <form className='column-6'>
-            <div className=''>
+        <form>
+            <div>
                 <div className='form-group'>
                     <label>First Name :</label>
                     <input type="text" id="firstName" placeholder='First Name Please' value={firstName !== "" ? firstName : ""} onChange={(e) => setFirstName(e.target.value)}></input>
